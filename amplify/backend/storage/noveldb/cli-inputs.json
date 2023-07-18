@@ -1,0 +1,20 @@
+{
+  "resourceName": "noveldb",
+  "tableName": "page",
+  "partitionKey": {
+    "fieldName": "id",
+    "fieldType": "string"
+  },
+  "gsi": [
+    {
+      "name": "test",
+      "partitionKey": {
+        "fieldName": "id",
+        "fieldType": "string"
+      }
+    }
+  ],
+  "triggerFunctions": [
+    "noveldbTrigger5a42573c"
+  ]
+}
